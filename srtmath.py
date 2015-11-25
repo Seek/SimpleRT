@@ -104,6 +104,7 @@ class Ray(object):
         return self.origin + self.direction * args[0]
         
 def quadratic(a, b, c):
+    """ Always returns the smallest root as t0 """
     discrim = b**2 - 4 * a * c
     if discrim < 0:
         return (False, 0, 0)
